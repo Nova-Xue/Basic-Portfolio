@@ -1,31 +1,81 @@
 body{
-    background-color: #4aaaa5;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background-color: blueviolet;
     margin: 0;
-}
-div{
-    background-color: white;
-    margin: 0 0 20px 0;
     padding: 0;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    /* background-image:  */
 }
 section{
-    margin: 0 auto 20px auto;
-    width: 960px;
-    
-}
-.main{
     width: 960px;
     margin: 0 auto;
+    padding: 0;
+}
+h1{
+    float: left;
+    color: white;
+    background-color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    margin: 0;
+    padding: 10px;
+}
+h1::after{
+    display: none;
+    content: "";
     clear: both;
+}
+h2{
+    color: #4aaaa5;
+    background-color: white;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    margin: 10px;
+    padding: 10px;
+}
+nav{
+    float: right;
+    margin: auto 0;
+    padding: 10px 0;
+}
+a{
+    padding: 0 10px;
+    text-decoration: none;
+}
+div{
+    clear: both;
+}
+.headd{
+    background-color: white;
+}
+.main{
+    background-color: white;
+    width: 960px;
+    margin: 40px auto 0 auto;
+    overflow: auto;
 }
 hr{
     clear: both;
 }
-h1{
+.my-info{
+    width: 940px;
+    margin: 0;
+    padding: 20px 10px;
+}
+img{
     float: left;
 }
-
-nav{
-    float: right;
+img::after{
     clear: both;
+    display: block;
+    content: "";
+}
+#p1{
+    float: left;
+    overflow: auto;
+}
+#p1::after{
+    clear: both;
+    display: block;
+    content: "";
+}
+#p2{
+    float: left;
 }
