@@ -7,6 +7,9 @@ body{
 {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
+header{
+    border-bottom: 3px solid #4aaaa5;
+}
 div{
     overflow: auto;
     background-color: white;
@@ -15,6 +18,7 @@ section{
     width: 960px;
     margin: 0 auto;
     padding: 0;
+    overflow: auto;
 }
 h1{
     float: left;
@@ -32,7 +36,7 @@ h2{
     margin: 10px;
     padding: 10px;
 }
-h1::after, #p1::after, img::after{
+h1::after{
     display: none;
     content: "";
     clear: both;
@@ -56,22 +60,30 @@ hr{
     margin: 0;
     padding:0;
 }
-.my-info{
+.my-info,
+.portfolio-info,
+.contact-info {
     width: 940px;
     margin: 0;
     padding: 20px 10px;
     overflow: auto;
 }
-img{
-    margin: 10px;
-    padding: 0;
+.image{
     float: left;
+    width: 150px;
+    height: 150px;
+    margin: 0;
+    padding: 10px;
 }
 #p1{
-    float: left;
-    overflow: auto;
+    margin: 0;
+    padding: 10px;
+    width: 750px;
+    overflow: hidden;
 }
 #p2{
+    margin: 0;
+    padding: 10px;
     float: left;
 }
 footer{
@@ -85,4 +97,47 @@ footer{
 }
 .footer{
     background-color: chartreuse;
+}
+.parts{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 300px;
+}
+#part1,
+#part2,
+#part3,
+#part4,
+#part5{
+    width: 50%;
+    height: 33%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#part1{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url("../images/papyrus.png")
+}
+#part2{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#part3{
+    position: absolute;
+    left: 0;
+    top: 33%;
+}
+#part4{
+    position: absolute;
+    right: 0;
+    top: 33%;
+}
+#part5{
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
