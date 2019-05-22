@@ -1,9 +1,13 @@
 body{
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     margin: 0;
     padding: 0;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    /* background-image:  */
+    background-image: url('../images/papyrus.png');
+}
+div{
+    overflow: auto;
+    background-color: white;
 }
 section{
     width: 960px;
@@ -18,11 +22,7 @@ h1{
     margin: 0;
     padding: 10px;
 }
-h1::after{
-    display: none;
-    content: "";
-    clear: both;
-}
+
 h2{
     color: #4aaaa5;
     background-color: white;
@@ -30,51 +30,44 @@ h2{
     margin: 10px;
     padding: 10px;
 }
+h1::after, #p1::after, img::after{
+    display: none;
+    content: "";
+    clear: both;
+}
 nav{
+    /* background-color: lawngreen; */
     float: right;
-    margin: auto 0;
-    padding: 10px 0;
+    margin: 0;
+    padding: 15px 10px 10px ;
 }
 a{
     padding: 0 10px;
     text-decoration: none;
 }
-div{
-    clear: both;
-}
-.headd{
-    background-color: white;
-}
 .main{
-    background-color: white;
     width: 960px;
     margin: 40px auto 0 auto;
-    overflow: auto;
 }
 hr{
-    clear: both;
+    clear: both;    
+    margin: 0;
+    padding:0;
 }
 .my-info{
     width: 940px;
     margin: 0;
     padding: 20px 10px;
+    overflow: auto;
 }
 img{
+    margin: 10px;
+    padding: 0;
     float: left;
-}
-img::after{
-    clear: both;
-    display: block;
-    content: "";
 }
 #p1{
     float: left;
     overflow: auto;
-}
-#p1::after{
-    clear: both;
-    display: block;
-    content: "";
 }
 #p2{
     float: left;
