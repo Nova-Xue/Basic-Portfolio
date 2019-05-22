@@ -1,14 +1,15 @@
+html{
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+}
 body{
     /* background-color: blueviolet; */
     margin: 0;
     padding: 0;
     background-image: url('../images/papyrus.png');
 }
-{
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-}
 header{
-    border-bottom: 3px solid #4aaaa5;
+    border-bottom: 3px solid #cccccc;
 }
 div{
     overflow: auto;
@@ -54,11 +55,7 @@ a{
 .main{
     width: 960px;
     margin: 40px auto 0 auto;
-}
-hr{
-    clear: both;    
-    margin: 0;
-    padding:0;
+    border: 2px solid #dddddd;
 }
 .my-info,
 .portfolio-info,
@@ -79,7 +76,7 @@ hr{
     margin: 0;
     padding: 10px;
     width: 750px;
-    overflow: hidden;
+    overflow: auto;
 }
 #p2{
     margin: 0;
@@ -89,7 +86,7 @@ hr{
 footer{
     width: 100%;
     text-align: center;
-    background-color: blue;
+    background-color: #666666;
     margin: 0;
     padding: 10px 0 0 0;
     position: fixed;
